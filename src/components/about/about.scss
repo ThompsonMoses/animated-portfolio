@@ -1,0 +1,30 @@
+.p-bar{
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .skills{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .p-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .pbar-box{
+        width: 50%;
+        padding: 10px;
+        
+        
+    }
+
+}
