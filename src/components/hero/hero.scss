@@ -28,6 +28,12 @@
                 gap: 20px;
                 align-items: center;
                 text-align: center;
+
+            }
+            .scroll{
+                @include mobile{
+                   display: none;
+                }     
             }
 
             h2{
@@ -56,19 +62,38 @@
                     font-weight: 300;
                     cursor: pointer;
                 }
-                a{
+                a, .contact{
                     display: inline-block;
                     padding: 20px;
                     border-radius: 10px;
+
                 }
 
+                
+                
+                
+                
+                
                 .contact{
                     background-color: white;
                     margin-left: 20px;
                     color: black;
-                    padding: 20px;
+                    // padding: 20px;
                     font-weight: bold;
                     font-size: 15px;
+
+                    @include mobile{
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                @include mobile{
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 

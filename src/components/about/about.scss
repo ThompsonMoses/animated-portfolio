@@ -1,28 +1,51 @@
+@import "../../app.scss";
+
 .p-bar{
-    height: 100%;
+    height: calc(100vh - 100px);
     max-width: 1000px;
     margin: auto;
-    align-items: center;
     gap: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+    @include mobile{
+        height: 100vh;
+        gap: 0;
+        border: 1px solid red;
+    }
 
 
     .skills{
         text-align: center;
         padding: 20px 0;
+
+        @include mobile{
+            padding: 0px;
+            margin-top: 10px;
+        }
     }
 
     .p-box{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+            width: 100%;
+            gp: 10px;
+        }
     }
 
     .pbar-box{
-        width: 50%;
+        width: 90%;
         padding: 10px;
+
+        // @include mobile{
+        //     padding: 0;
+        // }
         
         
     }

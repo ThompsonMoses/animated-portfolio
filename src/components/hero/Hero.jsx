@@ -60,10 +60,12 @@ const Hero = () => {
                         </a>
                     </motion.button>
                     <motion.button className="contact" variants={textvariants}>
-                        Contact Me
+                        <a href="">
+                            CONTACT ME
+                        </a>
                     </motion.button>
                 </motion.div>
-                <motion.img variants={textvariants} animate="scrollButton" src="/scroll.png" alt="" />
+                <motion.img variants={textvariants} animate="scrollButton" src="/scroll.png" alt="" className="scroll" />
             </motion.div>
         </div>
         <motion.div className="slidingTextContainer" variants={slidervariants} initial="initial" animate="animate">
