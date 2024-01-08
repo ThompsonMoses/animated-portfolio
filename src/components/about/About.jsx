@@ -32,10 +32,10 @@ const About = () => {
                 <ProgressBar completed={97} animateOnRender={true} bgColor='orange'/>
             </div>
 
-            {/* <div className="pbar-box">
-                <p>React Native</p>
+            <div className="pbar-box">
+                <p>Vite</p>
                 <ProgressBar completed={95} animateOnRender={true}/>
-            </div> */}
+            </div>
 
             <div className="pbar-box">
                 <p>Version Control: Git</p>
