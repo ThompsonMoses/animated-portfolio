@@ -62,16 +62,16 @@ const Services = () => {
                 <button>GO</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgrey", color: "black"}}>
-                <h2>Responsive design</h2>
+                <h2>Responsive Design</h2>
                 <p>
                     Ensuring a seamless user experience across all devices with responsive and mobile-friendly designs
                 </p>
                 <button>GO</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgrey", color: "black"}}>
-                <h2>Web Application development</h2>
+                <h2>Web Application Development</h2>
                 <p>
-                    developing dynamic and feature-rich web applications that enhances user 
+                    Developing dynamic and feature-rich web applications that enhances user 
                     engagement and streamline process
                 </p>
                 <button>GO</button>
@@ -79,7 +79,7 @@ const Services = () => {
             <motion.div className="box" whileHover={{background:"lightgrey", color: "black"}}>
                 <h2>Maintenance and support</h2>
                 <p>
-                    providing ongoing maintenance and support services to ensure the continued success 
+                    Providing ongoing maintenance and support services to ensure the continued success 
                     and longevity of your digital assets 
                 </p>
                 <button>GO</button>

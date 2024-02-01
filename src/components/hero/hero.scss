@@ -81,9 +81,11 @@
                     // padding: 20px;
                     font-weight: bold;
                     font-size: 15px;
+                    
 
                     @include mobile{
                         padding: 0;
+                        height: 70px;
                         display: flex;
                         justify-content: center;
                         align-items: center;

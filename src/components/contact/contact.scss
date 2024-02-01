@@ -51,15 +51,43 @@
         @include mobile{
             width: 100%;
             padding:50px;
+            position: relative;
+            border: 1px solid blue;
+            display: none;
+
         }
 
+        // .svg{
+        //     border: 1px solid white;
+        //     display: flex;
+        //     height: 420px;
+        //     justify-content: center;
+        //     align-items: center;
 
-        .phoneSvg{
-            stroke: orange !important;
-            position: absolute;
-            margin: auto;
-            z-index: -1;
-        }
+
+            
+                    .phoneSvg{
+                        stroke: orange !important;
+                        position: absolute;
+                        margin: auto;
+                        z-index: -1;
+                        width: 350px;
+                        height: 350px;
+
+            
+                        @include mobile{
+                            width: 350px;
+                            object-fit: contain;
+                            border: 1px solid red;
+                            margin: auto;
+                            position: absolute;
+                            // left: 20;
+                            // top: 20;
+                            // bottom: 0;
+                        }
+                    }
+        // }
+
 
         form{
             display: flex;
@@ -92,6 +120,40 @@
         
             }
         }
+        
+    }
+    .form2{
+        display: none;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+             gap: 20px;
+             width: 90%;
+    
+            input, textarea {
+                // padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+               
+
+                
+            }
+
+            button{
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer; 
+                font-weight: 500;
+                    padding: 10px;
+                
+            }     
+        }
+
         
     }
 }
