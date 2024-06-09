@@ -7,34 +7,44 @@ const items = [
         id:1,
         title:"React social media",
         img: "https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam, suscipit nam accusantium dignissimos cumque!",
+        des: "Dynamic and Fully responsive social media platform with Facebook user interface design and a chat feature where you can connect with friends and join vibrant community.",
+        url: "https://www.google.com/"
     },
 
     {
         id:2,
         title:"React e-Commerce",
         img: "https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam, suscipit nam accusantium dignissimos cumque!",
+        des: "A Jumia prototype, designed to make shopping experience seemlessly and enjoyable with its resposive and easy to use features for better functionality.",
+        url: "https://thompsonmoses.github.io/JUMIA/"
     },
 
     {
         id:3,
         title:"Chess app",
         img: "https://images.pexels.com/photos/6114998/pexels-photo-6114998.jpeg",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam, suscipit nam accusantium dignissimos cumque!",
+        des: "Developed to enhance the chess-playing experience for all skill levels. It offers interactive tutorials, AI opponents a with adjustable difficulty, making it a comprehensive tool for mastering Chess.",
+        url: "https://www.google.com/"
     },
 
     {
         id:4,
         title:"Music app",
         img: "https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laboriosam, suscipit nam accusantium dignissimos cumque!",
+        des: "Developed to deliver a seamless and pesonalized listening experience. It features an extensive library of songs curated playlists, intelligent recommendations, offline listening, and social sharing capabilities, all designed to connect users with their favorite music effortlessly.",
+        url: "https://www.google.com/"
+        
     },
 ]
 
 const Single = ({item}) =>{
 
     const ref = useRef();
+    const buttonRefs = useRef([]);
+
+    const handleRedirect = (url) => {
+        window.open(url, '_blank');
+    };
 
     const {scrollYProgress} = useScroll({
         target: ref, 
@@ -50,7 +60,9 @@ const Single = ({item}) =>{
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.des}</p>
-                        <button>See Demo</button>
+                        <button rel={(el) => (buttonRefs.current[item.id]= el)}
+                            onClick={() => handleRedirect(item.url) 
+                        }>See Demo</button>
                     </motion.div>
                 </div>
             </div>

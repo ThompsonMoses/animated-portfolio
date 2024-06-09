@@ -57,7 +57,7 @@ const Contact = () => {
             </motion.div> */}
             <motion.div className="item" variants={variants}>
                 <h2>Phone</h2>
-                <span>08171398033</span>
+                <span>08084122170</span>
             </motion.div>
         </motion.div>
         <div className="formContainer">
@@ -134,7 +134,7 @@ const Contact = () => {
             transition={{ delay: 0, duration:1}} className="form2">
                 <input type="text" required placeholder="Name" name="name"/>
                 <input type="email" required placeholder="Email" name="email"/>
-                <textarea  rows={8} placeholder="message" name="message"></textarea>
+                <textarea  rows={8} placeholder="Message" name="message"></textarea>
                 <button>Submit</button>
                 {error && "Error"}
                 {success && "Success"}
