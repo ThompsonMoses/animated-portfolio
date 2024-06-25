@@ -3,38 +3,46 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
-    {
-        id:1,
-        title:"React social media",
-        img: "https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg",
-        des: "Dynamic and Fully responsive social media platform with Facebook user interface design and a chat feature where you can connect with friends and join vibrant community.",
-        url: "https://www.google.com/"
-    },
+    // {
+    //     id:1,
+    //     title:"React social media",
+    //     img: "https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg",
+    //     des: "Dynamic and Fully responsive social media platform with Facebook user interface design and a chat feature where you can connect with friends and join vibrant community.",
+    //     url: "https://www.google.com/"
+    // },
 
     {
         id:2,
+        title:"React Movie app",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinUblxAHpvGv12iaTPTO5s1sGAuX4-9LyZw&s",
+        des: "A comprehensive and user-friendly movie app that offers an extensive database, personalized recommendations, and seamless integration to enhance your cinematic experience. Built with React and firebase, it provides features like popular movies, trending movies and your personal account page, making it the ultimate companion for movie enthusiasts.",
+        url: "https://thompsonmoses.github.io/Metflix/"
+    },
+
+    {
+        id:3,
         title:"React e-Commerce",
         img: "https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         des: "A Jumia prototype, designed to make shopping experience seemlessly and enjoyable with its resposive and easy to use features for better functionality.",
         url: "https://thompsonmoses.github.io/JUMIA/"
     },
 
-    {
-        id:3,
-        title:"Chess app",
-        img: "https://images.pexels.com/photos/6114998/pexels-photo-6114998.jpeg",
-        des: "Developed to enhance the chess-playing experience for all skill levels. It offers interactive tutorials, AI opponents a with adjustable difficulty, making it a comprehensive tool for mastering Chess.",
-        url: "https://www.google.com/"
-    },
+    // {
+    //     id:3,
+    //     title:"Chess app",
+    //     img: "https://images.pexels.com/photos/6114998/pexels-photo-6114998.jpeg",
+    //     des: "Developed to enhance the chess-playing experience for all skill levels. It offers interactive tutorials, AI opponents a with adjustable difficulty, making it a comprehensive tool for mastering Chess.",
+    //     url: "https://www.google.com/fan"
+    // },
 
-    {
-        id:4,
-        title:"Music app",
-        img: "https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        des: "Developed to deliver a seamless and pesonalized listening experience. It features an extensive library of songs curated playlists, intelligent recommendations, offline listening, and social sharing capabilities, all designed to connect users with their favorite music effortlessly.",
-        url: "https://www.google.com/"
+    // {
+    //     id:4,
+    //     title:"Music app",
+    //     img: "https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //     des: "Developed to deliver a seamless and pesonalized listening experience. It features an extensive library of songs curated playlists, intelligent recommendations, offline listening, and social sharing capabilities, all designed to connect users with their favorite music effortlessly.",
+    //     url: "https://www.google.com/cat"
         
-    },
+    // },
 ]
 
 const Single = ({item}) =>{
@@ -54,6 +62,7 @@ const Single = ({item}) =>{
         <section >
             <div className="container" >
                 <div className="wrapper">
+
                     <div className="imageContainer" ref={ref}>
                         <img src={item.img} alt="" />
                     </div>

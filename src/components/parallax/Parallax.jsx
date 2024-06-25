@@ -19,7 +19,7 @@ import { useRef } from "react";
     className="parallax"
     ref={ref} 
     >
-        <motion.h1 style={{y: yText}}>{type=="services" ? "What We Do?" : "What We've Done"}</motion.h1>
+        <motion.h1 style={{y: yText}}>{type=="services" ? "What I Do?" : "What I've Done"}</motion.h1>
         <motion.div className="mountains"></motion.div>
         <motion.div className="planets" style={{y: yBg,
           backgroundImage:`url(${type==="services" ? "/planet.png" : "/sun.png"})`

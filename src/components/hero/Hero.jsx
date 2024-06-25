@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import "./hero.scss";
 
 
+
+
 const textvariants = {
     initial: {
         x: -500,
@@ -43,6 +45,12 @@ const slidervariants = {
     },
 };
 const Hero = () => {
+    const handleDownload = () =>{
+        const link = document.createElement('a');
+        link.href = '/Thompson Moses Resume.pdf';
+        link.download = '/Thompson Moses Resume.pdf';
+        link.click();
+    }
   return (
     <div className="hero">
         <div className="wrapper">
@@ -54,13 +62,14 @@ const Hero = () => {
                 <motion.h2 variants={textvariants}>THOMPSON MOSES</motion.h2>
                 <motion.h1 variants={textvariants}>WEB DEVELOPER</motion.h1>
                 <motion.div variants={textvariants} className="buttons">
-                    <motion.button variants={textvariants}> 
-                        <a href="/Thompson Moses CV Resume.pdf" download={"/Thompson Moses CV Resume.pdf"}>
-                            DOWNLOAD CV
-                        </a>
+                    <motion.button className="downloadbtn" onClick={handleDownload} variants={textvariants} > 
+                        {/* <a href="/Thompson Moses CV Resume.pdf" download={"/Thompson Moses CV Resume.pdf"}>
+                            DOWNLOAD CV </a> */} 
+                            Download Cv
                     </motion.button>
+                    
                     <motion.button className="contact" variants={textvariants}>
-                        <a href="">
+                        <a href="mailto:thompsonmoses02@gmail.com&subject=Job%20Application&body=Hello%20Thompson%0D%0AMY%20Name%20is%20...">
                             CONTACT ME
                         </a>
                     </motion.button>

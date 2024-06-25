@@ -62,6 +62,13 @@
                     font-weight: 300;
                     cursor: pointer;
                 }
+                .downloadbtn{
+                    padding: 0 10px;
+                    @include mobile{
+                        height: 100%;
+                    }
+                    
+                }
                 a, .contact{
                     display: inline-block;
                     padding: 20px;
